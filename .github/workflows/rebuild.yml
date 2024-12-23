@@ -18,6 +18,8 @@ jobs:
       
       - name: Rebuild
         run: |
+         sudo add-apt-repository https://apt-origin.pop-os.org/ubuntu/dists/jammy/universe/binary-amd64/
+         sudo apt update
          sudo apt install python2
          npm install
          npm run translate
